@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap');
 
+$yellow: #F3C561;
+$blue: #003267;
+$white: #fff;
+
 :root {
     overflow-x: hidden;
     max-width: 100%;
@@ -64,7 +68,7 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
-        display: none;
+        // display: none;
 
         .nav_a {
             font-family: 'Inter', sans-serif;

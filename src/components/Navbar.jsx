@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -6,14 +7,14 @@ const Navbar = () => {
       <div className="Navbar">
         <div className="row align-items-center justify-content-between">
           <div className="col-2">
-            <a className='nav_logo' href=""><img className='w-100' src="/image/Logo.png" alt="" /></a>
+            <Link className='nav_logo' to="/"><img className='w-100' src="/image/Logo.png" alt="" /></Link>
           </div>
           <div className="col-9 d-flex justify-content-center">
-            <a className='nav_a' href="">Главная</a>
-            <a className='nav_a' href="">О нас</a>
-            <a className='nav_a' href="">Подбор квартир</a>
-            <a className='nav_a' href="">Контакты</a>
-            <a className='nav_a' href="">Жилые комплексы</a>
+            <Link className='nav_a' to="/">Главная</Link>
+            <Link className='nav_a' to="/">О нас</Link>
+            <Link className='nav_a' to="/selection-of-apartment">Подбор квартир</Link>
+            <Link className='nav_a' to="/">Контакты</Link>
+            <Link className='nav_a' to="/">Жилые комплексы</Link>
           </div>
           <div className="col-1">
             <div className="nav_li">
