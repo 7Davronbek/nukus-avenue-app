@@ -9,15 +9,15 @@ import { Pagination, Navigation } from "swiper";
 
 const SecondApartment = () => {
     return (
-        <div className='FirstApartment SecondApartment' id='one'>
+        <div className='FirstApartment SecondApartment' id='second'>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 mx-auto">
                         <div className="row">
                             <div className="col-lg-4 myCol">
                                 <h1>План и планировка</h1>
-                                <h2>Одна <br /> комната</h2>
-                                <h3>Общая площядь: <strong>49,8 м2</strong></h3>
+                                <h2>Двух <br /> комната</h2>
+                                <h3>Общая площядь:  <strong>60.4 м2</strong></h3>
 
                                 <button className="btn myBtn">Оставить заявку</button>
                             </div>
@@ -32,14 +32,10 @@ const SecondApartment = () => {
                                     className="mySwiper"
                                 >
                                     <SwiperSlide>
-                                        <div className="img">
-                                            <img src="/image/oneRoom1.jpg" alt="" />
-                                        </div>
+                                        <div className="img"><img src="/image/twoRoom1.jpg" alt="" />  </div>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="img">
-                                            <img src="/image/oneRoom2.jpg" alt="" />
-                                        </div>
+                                        <div className="img"><img src="/image/twoRoom2.jpg" alt="" />  </div>
                                     </SwiperSlide>
 
                                 </Swiper>
