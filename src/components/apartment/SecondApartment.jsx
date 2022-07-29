@@ -7,9 +7,9 @@ import "swiper/css/navigation";
 
 import { Pagination, Navigation } from "swiper";
 
-const FirstApartment = () => {
+const SecondApartment = () => {
     return (
-        <div className='FirstApartment' id='one'>
+        <div className='FirstApartment SecondApartment' id='one'>
             <div className="container">
                 <div className="row">
                     <div className="col-lg-10 mx-auto">
@@ -52,4 +52,4 @@ const FirstApartment = () => {
     )
 }
 
-export default FirstApartment
+export default SecondApartment
