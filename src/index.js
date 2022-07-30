@@ -5,6 +5,9 @@ import reportWebVitals from "./reportWebVitals";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@fancyapps/ui/dist/fancybox.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import "./style/main.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

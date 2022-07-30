@@ -2,10 +2,6 @@ import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
 import { Pagination, Navigation } from "swiper";
 
 const SecondApartment = () => {
