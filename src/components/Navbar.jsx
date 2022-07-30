@@ -1,7 +1,8 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
+  const location = useLocation()
   return (
     <>
       <div className="Navbar">
@@ -11,11 +12,11 @@ const Navbar = () => {
               <Link className='nav_logo' to="/"><img className='w-100' src="/image/Logo.png" alt="" /></Link>
             </div>
             <div className="col-9 d-flex justify-content-center">
-              <Link className='nav_a' to="/">Главная</Link>
-              <Link className='nav_a' to="/about-us">О нас</Link>
-              <Link className='nav_a' to="/selection-of-apartment">Подбор квартир</Link>
-              <Link className='nav_a' to="/">Контакты</Link>
-              <Link className='nav_a' to="/">Жилые комплексы</Link>
+              <Link className={`nav_a ${location.pathname === '/' ? 'active' : ''}`} to="/">Главная</Link>
+              <Link className={`nav_a ${location.pathname === '/about-us' ? 'active' : ''}`} to="/about-us">О нас</Link>
+              <Link className={`nav_a ${location.pathname === '/selection-of-apartment' ? 'active' : ''}`} to="/selection-of-apartment">Подбор квартир</Link>
+              <Link className={`nav_a ${location.pathname === '/contacts' ? 'active' : ''}`} to="/">Контакты</Link>
+              <Link className={`nav_a ${location.pathname === '/' ? 'active' : ''}`} to="/">Жилые комплексы</Link>
             </div>
             <div className="col-1">
               <div className="nav_li">

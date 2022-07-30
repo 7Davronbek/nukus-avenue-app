@@ -70,12 +70,18 @@ body {
 
         .nav_a {
             font-family: 'Inter', sans-serif;
-            font-weight: 600;
+            font-weight: 500;
+            transition: all .2s ease-in-out;
             font-size: 18px;
             line-height: 22px;
             color: #003267;
             margin-right: 20px;
             margin-left: 20px;
+
+            &.active {
+                font-weight: 600;
+                color: #000;
+            }
         }
 
         .nav_li {
@@ -1052,7 +1058,7 @@ body {
 
         .img {
             position: relative;
-            
+
             i {
                 position: absolute;
                 top: 50%;
@@ -1070,13 +1076,13 @@ body {
                 width: 100%;
                 top: -45%;
                 left: -10%;
-            
+
 
                 img {
                     width: 100%;
                 }
             }
-            
+
             .cards {
                 width: 88%;
                 margin: auto;
@@ -1155,8 +1161,12 @@ body {
         .soc {
             margin-top: 30px;
             display: flex;
-            justify-content: space-between;
+            // justify-content: space-between;
             align-items: center;
+
+            a {
+                margin-right: 32px !important;
+            }
         }
 
         .footer_address_h {
