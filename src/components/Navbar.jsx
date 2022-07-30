@@ -16,7 +16,7 @@ const Navbar = () => {
               <Link className={`nav_a ${location.pathname === '/about-us' ? 'active' : ''}`} to="/about-us">О нас</Link>
               <Link className={`nav_a ${location.pathname === '/selection-of-apartment' ? 'active' : ''}`} to="/selection-of-apartment">Подбор квартир</Link>
               <Link className={`nav_a ${location.pathname === '/contacts' ? 'active' : ''}`} to="/contacts">Контакты</Link>
-              <Link className={`nav_a ${location.pathname === '/' ? 'active' : ''}`} to="/">Жилые комплексы</Link>
+              <Link className={`nav_a ${location.pathname === '/complexes' ? 'active' : ''}`} to="/complexes">Жилые комплексы</Link>
             </div>
             <div className="col-1">
               <div className="nav_li">
