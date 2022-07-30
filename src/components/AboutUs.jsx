@@ -7,7 +7,7 @@ const AboutUs = () => {
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="aboutus_h">Немного о «Nukus Avenue»</div>
+                    <div className="aboutus_h">Немного о <br /> «Nukus Avenue»</div>
                     
                 </div>
                 <div className="col-lg-6">
