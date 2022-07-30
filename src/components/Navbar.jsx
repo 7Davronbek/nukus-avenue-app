@@ -12,7 +12,7 @@ const Navbar = () => {
             </div>
             <div className="col-9 d-flex justify-content-center">
               <Link className='nav_a' to="/">Главная</Link>
-              <Link className='nav_a' to="/">О нас</Link>
+              <Link className='nav_a' to="/about-us">О нас</Link>
               <Link className='nav_a' to="/selection-of-apartment">Подбор квартир</Link>
               <Link className='nav_a' to="/">Контакты</Link>
               <Link className='nav_a' to="/">Жилые комплексы</Link>
