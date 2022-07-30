@@ -909,4 +909,20 @@ body {
         }
 
     }
+
+    
+    .fancybox__thumbs {
+        display: none;
+    }
+
+    .carousel__button  {
+        &:focus {
+            box-shadow: 0 0 0 1px #fff,0 0 0 2px $blue !important;
+            // box-shadow: none !important;
+        }
+    }
+
+    .fancybox__progress {
+        background-color: $white;
+    }
 }

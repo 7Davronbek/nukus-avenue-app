@@ -33,14 +33,10 @@ const FirstApartment = () => {
                                     className="mySwiper"
                                 >
                                     <SwiperSlide>
-                                        <div className="img">
-                                            <img src="/image/oneRoom1.jpg" alt="" />
-                                        </div>
+                                        <div className="img"><a href={`/image/oneRoom1.jpg`} data-fancybox="gallery" ><img alt='Nukus Avenue' src={`/image/oneRoom1.jpg`} className='w-100' /></a></div>
                                     </SwiperSlide>
                                     <SwiperSlide>
-                                        <div className="img">
-                                            <img src="/image/oneRoom2.jpg" alt="" />
-                                        </div>
+                                        <div className="img"><a href={`/image/oneRoom2.jpg`} data-fancybox="gallery" ><img alt='Nukus Avenue' src={`/image/oneRoom2.jpg`} className='w-100' /></a></div>
                                     </SwiperSlide>
 
                                 </Swiper>
