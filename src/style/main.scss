@@ -1046,6 +1046,59 @@ body {
         }
     }
 
+    .AboutHeader {
+        background-color: $blue;
+        padding: 145px 0;
+
+        .img {
+            position: relative;
+            
+            i {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                cursor: pointer;
+            }
+        }
+
+        .myCol {
+            position: relative;
+
+            .leftImg {
+                position: absolute;
+                width: 100%;
+                top: -45%;
+                left: -10%;
+            
+
+                img {
+                    width: 100%;
+                }
+            }
+            
+            .cards {
+                width: 88%;
+                margin: auto;
+            }
+
+            h1 {
+                font-weight: 700;
+                font-size: 56px;
+                line-height: 60px;
+                color: $yellow;
+                margin-bottom: 50px;
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 33px;
+                color: #FFFFFF;
+            }
+        }
+    }
+
     .Footer {
         .container {
             max-width: 1250px;
