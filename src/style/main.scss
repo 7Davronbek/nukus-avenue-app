@@ -1105,6 +1105,23 @@ body {
         }
     }
 
+    .ComplexesHeader {
+        position: relative;
+
+        .img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            height: 700px;
+            padding: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
     .Footer {
         .container {
             max-width: 1250px;
