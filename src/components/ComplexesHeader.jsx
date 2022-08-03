@@ -6,7 +6,7 @@ const ComplexesHeader = () => {
             <div className="container">
                 <div className="row">
                     <div className="img">
-                        <img src="/image/plan.png" alt="" />
+                        <img src="/image/planHeader.png" alt="" />
                     </div>
                     <div className="col-lg-6 offset-6 myCol">
                         <h1>Преимущества ЖК «Nukus Avenue»</h1>
