@@ -28,7 +28,7 @@ const Plan = () => {
                     {/* <div className="line"></div> */}
 
                     <div className="col-lg-10 mx-auto myCol">
-                        <div className="acc">
+                        <div className="acc first">
 
                             <Button className='btn' color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
                                 <span><img src="/icon/arrowBottom.svg" alt="" /></span> Квартиры на 2 этаже
@@ -75,10 +75,10 @@ const Plan = () => {
 
                         <div className="acc">
 
-                            <Button className='btn' color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
+                            <Button className='btn' color="primary" id="toggler2" style={{ marginBottom: '1rem' }}>
                                 <span><img src="/icon/arrowBottom.svg" alt="" /></span> Квартиры на 3 этаже
                             </Button>
-                            <UncontrolledCollapse className='myCollapse' toggler="#toggler">
+                            <UncontrolledCollapse className='myCollapse' toggler="#toggler2">
                                 <table className="table">
                                     <tbody>
                                         <tr className='myTr'>
@@ -120,10 +120,10 @@ const Plan = () => {
 
                         <div className="acc">
 
-                            <Button className='btn' color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
-                                <span><img src="/icon/arrowBottom.svg" alt="" /></span> Квартиры на 2 этаже
+                            <Button className='btn' color="primary" id="toggler3" style={{ marginBottom: '1rem' }}>
+                                <span><img src="/icon/arrowBottom.svg" alt="" /></span> Квартиры на 4-11 этаже
                             </Button>
-                            <UncontrolledCollapse className='myCollapse' toggler="#toggler">
+                            <UncontrolledCollapse className='myCollapse' toggler="#toggler3">
                                 <table className="table">
                                     <tbody>
                                         <tr className='myTr'>
@@ -165,10 +165,10 @@ const Plan = () => {
 
                         <div className="acc">
 
-                            <Button className='btn' color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
-                                <span><img src="/icon/arrowBottom.svg" alt="" /></span> Квартиры на 2 этаже
+                            <Button className='btn' color="primary" id="toggler4" style={{ marginBottom: '1rem' }}>
+                                <span><img src="/icon/arrowBottom.svg" alt="" /></span> Квартиры на 12 этаже
                             </Button>
-                            <UncontrolledCollapse className='myCollapse' toggler="#toggler">
+                            <UncontrolledCollapse className='myCollapse' toggler="#toggler4">
                                 <table className="table">
                                     <tbody>
                                         <tr className='myTr'>

@@ -1166,9 +1166,13 @@ body {
         margin-bottom: 1rem;
         border-bottom: 1px solid  #003267;
         width: 100%;
-        border-top: 1px solid  #003267;
-        padding: 20px 5px;
+        padding: 30px 5px;
         border-radius: 0;
+        margin-bottom: 0;
+
+        &.first {
+            border-top: 1px solid  #003267;
+        }
     }
 
         h1 {
