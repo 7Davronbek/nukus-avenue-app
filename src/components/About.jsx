@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const About = () => {
     return (
@@ -14,10 +15,10 @@ const About = () => {
                                 <div className="about_p">
                                     Компания «BEST HOUSE» успешно занимается реализацией проектов в сфере недвижимости и строительства. На данный момент, одним из самых значимых проектов нашей компании является жилой комплекс «Nukus Avenue» в  Яккасарайском районе столицы Узбекистана. Этот жилой комплекс позволит обладателям квартир в нем обрести уютную жизнь! Комфорт и удобство обеспечены вам, ведь квартиры в жилом комплексе «Nukus Avenue» уникальны по своей планировке и каждый сможет выбрать то, что по душе.
                                 </div>
-                                <a href='' className="about_a">
+                                <Link to="/about-us" className="about_a">
                                     <div className="about_l">Подробнее</div>
                                     <div ><img src="/image/line.png" alt="" /></div>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                       

@@ -7,7 +7,7 @@ const Header = () => {
                 <img className='header_img' src="/image/header.png" alt="" />
                 <div className="container">
                     <div className="row justify-content-end">
-                        <div className="col-6 header_box">
+                        <div className="col-lg-6 header_box">
                             <img src="/image/header_b.png" alt="" className="header_back" />
                             <div className="header_h">
                                 Выбери квартиру своей мечты

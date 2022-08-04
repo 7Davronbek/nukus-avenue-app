@@ -8,7 +8,7 @@ const Plan = () => {
                     <div className="col-lg-12">
                         <h1>План и квадратура квартир</h1>
                         <div className="img">
-                            <img src="/image/plan.png" alt="" />
+                            <img className='w-100' src="/image/plan.png" alt="" />
                         </div>
                     </div>
 

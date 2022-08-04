@@ -4,7 +4,7 @@ const AboutHeader = () => {
   return (
     <div className='AboutHeader'>
         <div className="container">
-            <div className="row align-items-center">
+            <div className="row align-items-center about_box">
                 <div className="col-lg-6 myCol">
                     <div className="cards">
                         <h1>Наш взгляд на жизнь</h1>

@@ -8,7 +8,7 @@ const ComplexesHeader = () => {
                     <div className="img">
                         <img src="/image/planHeader.png" alt="" />
                     </div>
-                    <div className="col-lg-6 offset-6 myCol">
+                    <div className="col-lg-6 offset-lg-6 myCol">
                         <h1>Преимущества ЖК «Nukus Avenue»</h1>
                         <h2>Надежные апартаменты</h2>
                         <p>Покупая жилье в новостройке, вы получаете современные апартаменты, расположенные в перспективном районе с продуманной инфраструктурой. Мы строим только кирпичные дома, а они как мы знаем доказали свою надежность временем.</p>
