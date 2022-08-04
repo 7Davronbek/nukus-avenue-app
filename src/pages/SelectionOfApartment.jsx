@@ -5,14 +5,14 @@ import FourthApartment from '../components/apartment/FourthApartment'
 import SecondApartment from '../components/apartment/SecondApartment'
 import ThirdApartment from '../components/apartment/ThirdApartment'
 
-const SelectionOfApartment = () => {
+const SelectionOfApartment = ({ setModal }) => {
     return (
         <>
             <ApartmentHeader />
-            <FirstApartment />
-            <SecondApartment />
-            <ThirdApartment />
-            <FourthApartment />
+            <FirstApartment setModal={setModal} />
+            <SecondApartment setModal={setModal} />
+            <ThirdApartment setModal={setModal} />
+            <FourthApartment setModal={setModal} />
         </>
     )
 }

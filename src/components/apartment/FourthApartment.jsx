@@ -4,7 +4,7 @@ import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
 import { Pagination, Navigation } from "swiper";
 
-const FourthApartment = () => {
+const FourthApartment = ({ setModal }) => {
     return (
         <div className='FirstApartment SecondApartment' id='fourth'>
             <div className="container">
@@ -16,7 +16,7 @@ const FourthApartment = () => {
                                 <h2>Четырёх <br /> комната</h2>
                                 <h3>Общая площядь:  <strong>94.4 м2</strong></h3>
 
-                                <button className="btn myBtn">Оставить заявку</button>
+                                <button onClick={() => setModal(true)} className="btn myBtn">Оставить заявку</button>
                             </div>
 
                             <div className="col-lg-8">

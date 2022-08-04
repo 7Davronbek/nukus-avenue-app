@@ -1,7 +1,7 @@
 import React from 'react'
 import { useLocation } from 'react-router-dom'
 
-const Footer = () => {
+const Footer = ({modal, setModal}) => {
     const location = useLocation()
     return (
         <>
@@ -36,7 +36,7 @@ const Footer = () => {
                                     </div>
                                 </div>
 
-                                <a className='footer_send' href="">Оставить заявку</a>
+                                <button onClick={() => setModal(true)} style={{cursor: 'pointer'}} className='footer_send' href="">Оставить заявку</button>
 
 
                             </div>
