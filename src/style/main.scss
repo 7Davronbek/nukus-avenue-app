@@ -4,9 +4,8 @@ $yellow: #F3C561;
 $blue: #003267;
 $white: #fff;
 
-:root {
+#root {
     overflow-x: hidden;
-    max-width: 100%;
 }
 
 
@@ -61,12 +60,41 @@ body {
 
     .Navbar {
         width: 100%;
-        height: 100px;
+        padding: 20px 0;
         background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         // display: none;
+
+        .myCol {
+
+            @media(max-width: 992px) {
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: 100vh;
+                z-index: 999;
+                background: #fff;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                justify-content: center !important;
+                transform: translateX(100%);
+                transition: all .5s ease-in-out;
+            }
+
+            &.active {
+
+                @media(max-width: 992px) {
+                    transform: translate(0);
+                }
+            }
+        }
 
         .nav_a {
             font-family: 'Inter', sans-serif;
@@ -82,6 +110,10 @@ body {
                 font-weight: 600;
                 color: #000;
             }
+
+            @media(max-width: 992px) {
+                margin-bottom: 45px;
+            }
         }
 
         .nav_li {
@@ -90,6 +122,11 @@ body {
             margin-left: 50px;
             margin-right: 20px;
             margin-left: 20px;
+            margin-left: 125px;
+
+            @media(max-width: 1200px) {
+                margin-left: 20px;
+            }
         }
 
         .nav_li_a {
@@ -440,6 +477,7 @@ body {
         .fut {
 
             @media(max-width:976px) {
+                margin: 0;
                 width: 100%;
                 text-align: center;
             }
