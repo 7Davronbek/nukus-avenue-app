@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Header = ({modal, setModal}) => {
+const Header = ({ modal, setModal }) => {
     return (
         <>
             <div className="Header">
@@ -15,9 +15,9 @@ const Header = ({modal, setModal}) => {
                             <div className="header_p">
                                 В нашем комплексе в сё продумано до мелочей
                             </div>
-                            <buttn onClick={() => setModal(true)} style={{cursor: 'pointer'}} className="header_a">
+                            <button style={{ backgroundColor: "transparent", cursor: 'pointer' }} onClick={() => setModal(true)} className="header_a">
                                 Оставить заявку
-                            </buttn>
+                            </button>
                         </div>
                     </div>
                 </div>

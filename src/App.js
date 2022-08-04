@@ -16,7 +16,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/about-us" element={<AboutUsPage />} />
-        <Route path="/contacts" element={<Contact />} />
+        <Route path="/contacts" element={<Contact setModal={setModal} />} />
         <Route path="/complexes" element={<Complexes />} />
 
         <Route
@@ -25,6 +25,7 @@ const App = () => {
         />
 
         <Route path="/" element={<Main modal={modal} setModal={setModal} />} />
+
         <Route
           path="/*"
           element={

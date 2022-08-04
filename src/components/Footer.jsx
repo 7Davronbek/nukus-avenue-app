@@ -1,7 +1,7 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom'
+import { useLocation, Link } from 'react-router-dom'
 
-const Footer = ({modal, setModal}) => {
+const Footer = ({ modal, setModal }) => {
     const location = useLocation()
     return (
         <>
@@ -27,16 +27,16 @@ const Footer = ({modal, setModal}) => {
                                 <div className="col-12">
                                     <div className="row">
                                         <div className="footer_box">
-                                            <a className='footer_box_a' href="">Главная</a>
-                                            <a className='footer_box_a' href="">О нас</a>
-                                            <a className='footer_box_a' href="">Подбор квартир</a>
-                                            <a className='footer_box_a' href="">Контакты</a>
-                                            <a className='footer_box_a' href="">Жилые комплексы</a>
+                                            <Link to='/' className='footer_box_a'>Главная</Link>
+                                            <Link to='/about-us' className='footer_box_a'>О нас</Link>
+                                            <Link to='/selection-of-apartment' className='footer_box_a'>Подбор квартир</Link>
+                                            <Link to='/contacts' className='footer_box_a'>Контакты</Link>
+                                            <Link to='/complexes' className='footer_box_a'>Жилые комплексы</Link>
                                         </div>
                                     </div>
                                 </div>
 
-                                <button onClick={() => setModal(true)} style={{cursor: 'pointer'}} className='footer_send' href="">Оставить заявку</button>
+                                <button onClick={() => setModal(true)} style={{ cursor: 'pointer' }} className='footer_send' href="">Оставить заявку</button>
 
 
                             </div>

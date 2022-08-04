@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contacts = () => {
+const Contacts = ({setModal}) => {
     return (
         <>
             <div className="Contacts">
@@ -19,7 +19,7 @@ const Contacts = () => {
                                 <a target={'_blank'} rel="noreferrer" className='contact_img' href=""><img src="/image/insta.png" alt="" /></a>
                                 <a target={'_blank'} rel="noreferrer" className='contact_img' href=""><img src="/image/face.png" alt="" /></a>
                             </div>
-                            <a className='contact_a' href="">Оставить заявку</a>
+                            <button style={{backgroundColor: "transparent"}} onClick={() => setModal(true)} className='contact_a' href="">Оставить заявку</button>
                         </div>
                         <div className="col-lg-7">
                             <iframe className="con_iframe w-100 h-100" title="Location"

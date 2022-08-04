@@ -1,10 +1,10 @@
 import React from 'react'
 import Contacts from '../components/Contacts'
 
-const Contact = () => {
+const Contact = ({setModal}) => {
   return (
     <>
-        <Contacts />
+        <Contacts setModal={setModal} />
     </>
   )
 }

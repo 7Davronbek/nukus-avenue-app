@@ -20,7 +20,7 @@ const Future = () => {
                                     <img className='future_img' src="/image/fut_1.png" alt="" />
                                     <div className="fut_name">Рассрочка</div>
                                     <div className="fut_text">Успей купить квартиру в жилом комплексе «Nukus Avenue» в рассрочку! *Рассрочка действует в течение 12 месяцев.</div>
-                                    <a className='fut_box' href="">
+                                    <a className='fut_box' href="tel: +998 55 500 03 55">
                                         <div className="fut_a">
                                             Позвонить
                                             <img className='fut_l' src="/image/line.png" alt="" />
@@ -36,7 +36,7 @@ const Future = () => {
                                     <div className="fut_name">Остались вопросы?</div>
                                     <div className="fut_text">Свяжитесь с нашими специалистами.
                                         Они с удовольствием помогут подобрать наилучший вариант планировки.</div>
-                                    <a className='fut_box' href="">
+                                    <a className='fut_box' href="tel: +998 55 500 03 55">
                                         <div className="fut_a">
                                             Позвонить
                                             <img className='fut_l' src="/image/line.png" alt="" />

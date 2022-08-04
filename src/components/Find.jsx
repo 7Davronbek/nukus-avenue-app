@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Find = () => {
     return (
@@ -13,7 +14,7 @@ const Find = () => {
                             <div className="find_p">
                                 Подберите квартиру, которая придется по душе и по потребностям.
                             </div>
-                            <a className='find_a' href="">Подробнее</a>
+                            <Link className='find_a' to="/selection-of-apartment">Подробнее</Link>
                         </div>
                         <div className="col-lg-7 mt-5 mt-lg-0">
                             <img className='w-100' src="/image/find_1.png" alt="" />
