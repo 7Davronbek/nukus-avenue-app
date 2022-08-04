@@ -68,6 +68,11 @@ body {
         position: relative;
         // display: none;
 
+        .open,
+        .close {
+            display: none;
+        }
+
         .myCol {
 
             @media(max-width: 992px) {
@@ -1660,6 +1665,9 @@ body {
         justify-content: center;
         background: #00000063;
         z-index: 111;
+        transition: all .5s ease-in-out;
+        opacity: 0;
+        visibility: hidden;
 
         .close {
             position: fixed;
@@ -1685,6 +1693,8 @@ body {
             border: 1px solid silver;
             text-align: center;
             z-index: 1;
+            transition: all .5s ease-in-out .1s;
+            transform: translateY(-30px);
         }
 
         input {
@@ -1706,6 +1716,15 @@ body {
             background: #003267;
             border-radius: 48px;
             padding: 13px 55px 13px;
+        }
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+
+            .cards {
+                transform: translate(0);
+            }
         }
     }
 

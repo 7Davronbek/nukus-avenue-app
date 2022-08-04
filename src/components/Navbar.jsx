@@ -13,7 +13,7 @@ const Navbar = () => {
               <Link className='nav_logo' to="/"><img className='w-100' src="/image/Logo.png" alt="" /></Link>
             </div>
             <div onClick={() => setNavbar(true)} className="open">open</div>
-            <div className={`col-10 d-flex justify-content-end myCol ${navbar ? 'active' : ''}`}>
+            <div className={`col-lg-10 d-flex justify-content-end myCol ${navbar ? 'active' : ''}`}>
               <div onClick={() => setNavbar(false)} className="close">close</div>
               <Link className={`nav_a ${location.pathname === '/' ? 'active' : ''}`} to="/">Главная</Link>
               <Link className={`nav_a ${location.pathname === '/about-us' ? 'active' : ''}`} to="/about-us">О нас</Link>

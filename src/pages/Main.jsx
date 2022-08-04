@@ -5,11 +5,11 @@ import Find from '../components/Find'
 import Future from '../components/Future'
 import Header from '../components/Header'
 
-const Main = () => {
+const Main = ({modal, setModal}) => {
     return (
         <>
 
-            <Header />
+            <Header modal={modal} setModal={setModal} />
             <About />
             <Find />
             <Benefites />

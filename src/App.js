@@ -1,5 +1,5 @@
-import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import React, { useState } from "react";
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import FeedBack from "./components/FeedBack";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
@@ -10,6 +10,7 @@ import Main from "./pages/Main";
 import SelectionOfApartment from "./pages/SelectionOfApartment";
 
 const App = () => {
+    const [modal, setModal] = useState(false)
     return (
         <BrowserRouter>
             <Navbar />
@@ -23,13 +24,13 @@ const App = () => {
                     element={<SelectionOfApartment />}
                 />
 
-                <Route path="/" element={<Main />} />
+                <Route path="/" element={<Main modal={modal} setModal={setModal} />} />
                 <Route path="/*" element={<>
                     <div className="container">
                         <div className="row">
-                            <div className="col-12 d-flex align-items-center justify-content-center vh-100">
+                            <div className="col-12 d-flex align-items-center justify-content-center py-5">
 
-                                <h1>Page Not Found</h1>
+                                <Link to='/'><h1>Page Not Found</h1></Link>
 
                             </div>
                         </div>
@@ -37,7 +38,7 @@ const App = () => {
                 </>} />
             </Routes>
             <Footer />
-            <FeedBack />
+            <FeedBack modal={modal} setModal={setModal} />
 
         </BrowserRouter>
     );
