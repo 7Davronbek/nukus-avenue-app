@@ -12,9 +12,9 @@ const Navbar = () => {
             <div className="col-lg-2 col-md-3 col-6">
               <Link className='nav_logo' to="/"><img className='w-100' src="/image/Logo.png" alt="" /></Link>
             </div>
-            <div onClick={() => setNavbar(true)} className="open">open</div>
+            <div onClick={() => setNavbar(true)} className="open"><img src="/icon/burger.svg" alt="" /></div>
             <div className={`col-lg-10 d-flex justify-content-end myCol ${navbar ? 'active' : ''}`}>
-              <div onClick={() => setNavbar(false)} className="close">close</div>
+              <div onClick={() => setNavbar(false)} className="close"><img src="/icon/burgerClose.svg" alt="" /></div>
               <Link className={`nav_a ${location.pathname === '/' ? 'active' : ''}`} to="/">Главная</Link>
               <Link className={`nav_a ${location.pathname === '/about-us' ? 'active' : ''}`} to="/about-us">О нас</Link>
               <Link className={`nav_a ${location.pathname === '/selection-of-apartment' ? 'active' : ''}`} to="/selection-of-apartment">Подбор квартир</Link>

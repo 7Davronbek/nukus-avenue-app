@@ -14,7 +14,7 @@ const FeedBack = ({ modal, setModal }) => {
 
         e.preventDefault()
 
-        axios.get(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${'Имя: ' + name + '%Телефон: ' + phone_number}`)
+        axios.get(`https://api.telegram.org/bot${bot.TOKEN}/sendMessage?chat_id=${bot.chatID}&text=${'Имя: ' + name + '%0AТелефон: ' + phone_number}`)
             .then((res) => {
                 console.log(res);
             })

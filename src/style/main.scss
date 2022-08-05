@@ -71,6 +71,30 @@ body {
         .open,
         .close {
             display: none;
+
+            @media(max-width: 992px) {
+                display: block;
+            }
+        }
+
+        .open {
+
+            img {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .close {
+
+            img {
+                position: absolute;
+                right: 30px;
+                top: 50px;
+                transform: translateY(-50%);
+            }
         }
 
         .myCol {
