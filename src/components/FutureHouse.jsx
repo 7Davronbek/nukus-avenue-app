@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Navigation } from "swiper";
 
 const FutureHouse = () => {
     return (
@@ -29,10 +29,8 @@ const FutureHouse = () => {
                 slidesPerView={3}
                 spaceBetween={30}
                 loop={true}
-                pagination={{
-                    clickable: true,
-                }}
-                modules={[Pagination]}
+                navigation={true}
+                modules={[ Navigation]}
                 className="mySwiper"
             >
                 <SwiperSlide><div className="img"><img src="/image/future2.png" alt="" /></div></SwiperSlide>
