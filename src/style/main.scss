@@ -641,6 +641,61 @@ body {
         margin-top: 180px;
         margin-bottom: 180px;
 
+        .swiper {
+            padding-top: 30px;
+        }
+
+        .swiper-pagination {
+            bottom: inherit;
+            top: 0;
+            right: 0;
+            left: inherit;
+            width: auto;
+        }
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 50px;
+            bottom: 0;
+            bottom: 18px;
+            position: absolute;
+            top: inherit;
+            transition: all .3s ease;
+
+            &::before {
+                content: '';
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #00152c;
+                border-radius: 50%;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            &::after {
+                display: none;
+            }
+        }
+
+        .swiper-button-next {
+            right: inherit;
+            left: 70px;
+
+            &::before {
+                background-image: url(../image/arrowRihjt.svg);
+            }
+        }
+
+        .swiper-button-prev {
+
+            &::before {
+                background-image: url(../image/arrowLeft.svg);
+            }
+        }
+
         @media(max-width:976px) {
             margin-top: 150px;
             margin-bottom: 150px;
@@ -677,18 +732,18 @@ body {
         }
 
         .find_p {
-            margin: 60px 0;
             width: 300px;
             font-family: 'Open Sans', sans-serif;
             font-weight: 400;
             font-size: 24px;
             line-height: 106.68%;
             color: #003267;
+            margin: 35px 0 100px;
 
             @media(max-width:976px) {
                 text-align: center;
                 margin: 50px auto;
-
+                width: 100%;
             }
         }
 
@@ -1821,7 +1876,7 @@ body {
                 height: auto;
             }
         }
-        
+
         &.active {
             visibility: visible;
 
