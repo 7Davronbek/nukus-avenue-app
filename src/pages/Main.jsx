@@ -3,6 +3,7 @@ import About from '../components/About'
 import Benefites from '../components/Benefites'
 import Find from '../components/Find'
 import Future from '../components/Future'
+import FutureHouse from '../components/FutureHouse'
 import Header from '../components/Header'
 
 const Main = ({modal, setModal}) => {
@@ -13,6 +14,7 @@ const Main = ({modal, setModal}) => {
             <About />
             <Find />
             <Benefites />
+            <FutureHouse />
             <Future />
 
         </>

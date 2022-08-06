@@ -6,14 +6,6 @@ const Future = () => {
             <div className="Future">
                 <div className="container">
                     <div className="row fut">
-                        <div className="col-12">
-                            <div className="fut_h">
-                                Взгляните на свой будущий дом
-                            </div>
-                            <div className="fut_p">
-                                Успейте купить квартиру для своей семьи в одном из лучших жилых комплексов Ташкента!
-                            </div>
-                        </div>
                         <div className="col-12 d-lg-block d-flex flex-column align-items-center">
                             <div className="row  fut">
                                 <div className="col-lg-12 ">

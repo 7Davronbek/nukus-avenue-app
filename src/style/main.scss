@@ -513,49 +513,6 @@ body {
 
         }
 
-        .fut_h {
-            width: 500px;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 600;
-            font-size: 44px;
-            line-height: 106.7%;
-            color: #003267;
-
-            @media(max-width:976px) {
-                text-align: center;
-                width: 100%;
-            }
-
-            @media(max-width:767px) {
-                font-size: 38px;
-            }
-
-            @media(max-width:450px) {
-                font-size: 30px;
-            }
-
-            @media(max-width:400px) {
-                font-size: 25px;
-            }
-        }
-
-        .fut_p {
-            margin-bottom: 50px;
-            margin-top: 15px;
-            width: 465px;
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 25px;
-            color: #003267;
-            margin-top: 50px;
-
-            @media(max-width:976px) {
-                text-align: center;
-                width: 100%;
-            }
-        }
-
         .fut_name {
             font-family: 'Open Sans', sans-serif;
             font-weight: 600;
@@ -633,6 +590,53 @@ body {
 
             @media(max-width:976px) {
                 align-items: center;
+            }
+        }
+    }
+
+    .FutureHouse {
+        padding: 100px 0;
+
+        .fut_h {
+            width: 500px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 600;
+            font-size: 44px;
+            line-height: 106.7%;
+            color: #003267;
+
+            @media(max-width:976px) {
+                text-align: center;
+                width: 100%;
+            }
+
+            @media(max-width:767px) {
+                font-size: 38px;
+            }
+
+            @media(max-width:450px) {
+                font-size: 30px;
+            }
+
+            @media(max-width:400px) {
+                font-size: 25px;
+            }
+        }
+
+        .fut_p {
+            margin-bottom: 50px;
+            margin-top: 15px;
+            width: 465px;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 25px;
+            color: #003267;
+            margin-top: 50px;
+
+            @media(max-width:976px) {
+                text-align: center;
+                width: 100%;
             }
         }
     }
