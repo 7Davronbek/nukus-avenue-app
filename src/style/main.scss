@@ -643,12 +643,24 @@ body {
             &::before {
                 background-image: url(../image/arrowRihjt.svg);
             }
+
+            @media(max-width: 1100px) {
+                right: 10px;
+                bottom: 10px;
+                top: inherit;
+            }
         }
 
         .swiper-button-prev {
 
             &::before {
                 background-image: url(../image/arrowLeft.svg);
+            }
+
+            @media(max-width: 1100px) {
+                right: 70px;
+                bottom: 10px;
+                top: inherit;
             }
         }
 
@@ -702,6 +714,10 @@ body {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+            }
+
+            @media(max-width: 767px) {
+                height: 350px;
             }
         }
     }
@@ -851,8 +867,8 @@ body {
             text-align: center;
 
             @media(max-width:576px) {
-                font-size: 50px;
                 line-height: 65px;
+                font-size: 35px;
             }
         }
 
@@ -1482,13 +1498,9 @@ body {
             padding: 0;
 
             @media(max-width:992px) {
-                padding-top: 60px;
+                padding-top: 0;
                 width: 100%;
                 position: initial;
-            }
-
-            @media(max-width:992px) {
-                padding-top: 40px;
             }
 
             img {

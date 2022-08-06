@@ -8,7 +8,7 @@ import { Navigation } from "swiper";
 
 const FutureHouse = () => {
     return (
-        <div className='FutureHouse'>
+        <div className='FutureHouse px-3'>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
@@ -26,11 +26,24 @@ const FutureHouse = () => {
             </div>
 
             <Swiper
-                slidesPerView={3}
                 spaceBetween={30}
+                breakpoints={{
+                    0: {
+                        slidesPerView: 1.05,
+                        spaceBetween: 20,
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 40,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
+                }}
                 loop={true}
                 navigation={true}
-                modules={[ Navigation]}
+                modules={[Navigation]}
                 className="mySwiper"
             >
                 <SwiperSlide><div className="img"><img src="/image/future2.png" alt="" /></div></SwiperSlide>

@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import FeedBack from "./components/FeedBack";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
+import ScrollToTop from "./components/ScrollToTop";
 import AboutUsPage from "./pages/AboutUsPage";
 import Complexes from "./pages/Complexes";
 import Contact from "./pages/Contact";
@@ -45,6 +46,7 @@ const App = () => {
       </Routes>
       <Footer modal={modal} setModal={setModal} />
       <FeedBack modal={modal} setModal={setModal} />
+      <ScrollToTop />
     </BrowserRouter>
   );
 };

@@ -15,11 +15,11 @@ const Navbar = () => {
             <div onClick={() => setNavbar(true)} className="open"><img src="/icon/burger.svg" alt="" /></div>
             <div className={`col-lg-10 d-flex justify-content-end myCol ${navbar ? 'active' : ''}`}>
               <div onClick={() => setNavbar(false)} className="close"><img src="/icon/burgerClose.svg" alt="" /></div>
-              <Link className={`nav_a ${location.pathname === '/' ? 'active' : ''}`} to="/">Главная</Link>
-              <Link className={`nav_a ${location.pathname === '/about-us' ? 'active' : ''}`} to="/about-us">О нас</Link>
-              <Link className={`nav_a ${location.pathname === '/selection-of-apartment' ? 'active' : ''}`} to="/selection-of-apartment">Подбор квартир</Link>
-              <Link className={`nav_a ${location.pathname === '/contacts' ? 'active' : ''}`} to="/contacts">Контакты</Link>
-              <Link className={`nav_a ${location.pathname === '/complexes' ? 'active' : ''}`} to="/complexes">Жилые комплексы</Link>
+              <Link onClick={() => setNavbar(false)} className={`nav_a ${location.pathname === '/' ? 'active' : ''}`} to="/">Главная</Link>
+              <Link onClick={() => setNavbar(false)} className={`nav_a ${location.pathname === '/about-us' ? 'active' : ''}`} to="/about-us">О нас</Link>
+              <Link onClick={() => setNavbar(false)} className={`nav_a ${location.pathname === '/selection-of-apartment' ? 'active' : ''}`} to="/selection-of-apartment">Подбор квартир</Link>
+              <Link onClick={() => setNavbar(false)} className={`nav_a ${location.pathname === '/contacts' ? 'active' : ''}`} to="/contacts">Контакты</Link>
+              <Link onClick={() => setNavbar(false)} className={`nav_a ${location.pathname === '/complexes' ? 'active' : ''}`} to="/complexes">Жилые комплексы</Link>
 
               <div className="nav_li">
                 <a className='nav_li_a active ' href="">Ру</a>
