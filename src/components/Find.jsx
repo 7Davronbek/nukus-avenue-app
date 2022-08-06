@@ -33,13 +33,13 @@ const Find = () => {
                                     <div className="img"><a href={`/image/oneRoom1.jpg`} data-fancybox="gallery" ><img alt='Nukus Avenue' src={`/image/oneRoom1.jpg`} className='w-100' /></a></div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <div className="img"><a href={`/image/twoRoom1.jpg`} data-fancybox="gallery" ><img alt='Nukus Avenue' src={`/image/oneRoom2.jpg`} className='w-100' /></a></div>
+                                    <div className="img"><a href={`/image/twoRoom1.jpg`} data-fancybox="gallery" ><img alt='Nukus Avenue' src={`/image/twoRoom1.jpg`} className='w-100' /></a></div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <div className="img"><a href={`/image/thirdRoom1.jpg`} data-fancybox="gallery" ><img alt='Nukus Avenue' src={`/image/oneRoom2.jpg`} className='w-100' /></a></div>
+                                    <div className="img"><a href={`/image/thirdRoom1.jpg`} data-fancybox="gallery" ><img alt='Nukus Avenue' src={`/image/thirdRoom1.jpg`} className='w-100' /></a></div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <div className="img"><a href={`/image/fourRoom1.jpg`} data-fancybox="gallery" ><img alt='Nukus Avenue' src={`/image/oneRoom2.jpg`} className='w-100' /></a></div>
+                                    <div className="img"><a href={`/image/fourRoom1.jpg`} data-fancybox="gallery" ><img alt='Nukus Avenue' src={`/image/fourRoom1.jpg`} className='w-100' /></a></div>
                                 </SwiperSlide>
 
                             </Swiper>

@@ -18,8 +18,8 @@ const Footer = ({ modal, setModal }) => {
                                 <a href='https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=info@besthouse.uz' className="footer_mail_p">info@besthouse.uz</a>
 
                                 <div className="soc">
-                                    <a target={'_blank'} rel="noreferrer" className='ms-2 ms-lg-0 me-2 me-lg-0' href="fb.com/nukus.avenue.tm"><img src="/image/facebook.png" alt="" /></a>
-                                    <a target={'_blank'} rel="noreferrer" className='ms-2 ms-lg-0 me-2 me-lg-0' href="Intagram.com/nukus.avenue.tm"><img src="/image/instagram.png" alt="" /></a>
+                                    <a target={'_blank'} rel="noreferrer" className='ms-2 ms-lg-0 me-2 me-lg-0' href="https://www.facebook.com/nukus.avenue.tm/"><img src="/image/facebook.png" alt="" /></a>
+                                    <a target={'_blank'} rel="noreferrer" className='ms-2 ms-lg-0 me-2 me-lg-0' href="https://www.instagram.com/nukus.avenue.tm/"><img src="/image/instagram.png" alt="" /></a>
                                     <a target={'_blank'} rel="noreferrer" className='ms-2 ms-lg-0 me-2 me-lg-0' href="https://t.me/nukus_avenue"><img src="/image/telegram.png" alt="" /></a>
                                 </div>
                             </div>

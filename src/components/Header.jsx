@@ -13,7 +13,7 @@ const Header = ({ modal, setModal }) => {
                                 Выбери квартиру своей мечты
                             </div>
                             <div className="header_p">
-                                В нашем комплексе в сё продумано до мелочей
+                                В нашем комплексе всё продумано до мелочей
                             </div>
                             <button style={{ backgroundColor: "transparent", cursor: 'pointer' }} onClick={() => setModal(true)} className="header_a">
                                 Оставить заявку
