@@ -8,6 +8,27 @@ $white: #fff;
     overflow-x: hidden;
 }
 
+html {
+
+    ::selection {
+        background-color: $blue;
+        color: $white;
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #e5e5e5;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: $blue;
+        border-radius: 4px;
+    }
+}
+
 
 body {
     font-family: 'Open Sans', sans-serif;
