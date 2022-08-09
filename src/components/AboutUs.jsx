@@ -1,26 +1,27 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const AboutUs = () => {
+    const {t} = useTranslation();
   return (
     <>
     <div className="AboutUs">
         <div className="container">
             <div className="row">
                 <div className="col-lg-6">
-                    <div className="aboutus_h">Немного о <br /> «Nukus Avenue»</div>
-                    
+                    <div className="aboutus_h">{t('little')} <br /> «</div>
                 </div>
                 <div className="col-lg-6">
-                <div className="aboutus_p">«Nukus Avenue» успешно занимается реализацией проектов в сфере недвижимости и строительства. На данный момент, одним из самых значимых проектов нашей компании является жилой комплекс «Nukus Avenue» в  Яккасарайском районе столицы Узбекистана. Этот жилой комплекс позволит обладателям квартир в нем обрести уютную жизнь! Комфорт и удобство обеспечены вам, ведь квартиры в жилом комплексе «Nukus Avenue» уникальны по своей планировке и каждый сможет выбрать то, что по душе.</div>
+                <div className="aboutus_p">{t('little_text')}</div>
                 </div>
                 <div className="col-12">
                     <div className="about_name">
-                    Наши дома для тех, кто ценит уют, комфорт и индивидуальность.
+                    {t('about_name')}
                     </div>
                 </div>
                 <div className="col-12">
                     <div className="about_text">
-                    Применяем только инновационные технологии.
+                    {t('about_text')}
                     </div>
                 </div>
                 <div className="col-12">
@@ -28,7 +29,7 @@ const AboutUs = () => {
                 </div>
                 <div className="col-12">
                     <div className="about_desc">
-                    Место, где вы живете, может оказать существенное влияние на ваш образ жизни и счастье. Купив квартиру в ЖК «Nukus Avenue» вы не только получаете прекрасный дом, но и обретаете отличную инфраструктуру.
+                    {t('about_text_2')}
                     </div>
                 </div>
             </div>

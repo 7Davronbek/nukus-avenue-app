@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next';
 
 const Header = ({ modal, setModal }) => {
+    const {t} = useTranslation()
     return (
         <>
             <div className="Header">
@@ -10,13 +12,13 @@ const Header = ({ modal, setModal }) => {
                         <div className="col-lg-6 header_box">
                             <img src="/image/header_b.png" alt="" className="header_back" />
                             <div className="header_h">
-                                Выбери квартиру своей мечты
+                                {t('choose_your_dream_apartment')}
                             </div>
                             <div className="header_p">
-                                В нашем комплексе всё продумано до мелочей
+                                {t('in_our_complex_everything_is_thought_out_to_the_smallest_detail')}
                             </div>
                             <button style={{ backgroundColor: "transparent", cursor: 'pointer' }} onClick={() => setModal(true)} className="header_a">
-                                Оставить заявку
+                                {t('submit_your_application')}
                             </button>
                         </div>
                     </div>

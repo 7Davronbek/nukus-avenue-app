@@ -1678,7 +1678,6 @@ body {
     }
 
     .Footer {
-
         margin-top: 70px;
         padding-bottom: 50px;
         padding-top: 90px;
@@ -1694,7 +1693,7 @@ body {
 
 
         .container {
-            max-width: 1250px;
+            max-width: 1400px;
         }
 
 
@@ -1729,11 +1728,9 @@ body {
             font-size: 18px;
             line-height: 22px;
             color: #F3C561;
-
         }
 
         .footer_mail_p {
-
             font-family: 'Inter', sans-serif;
             font-weight: 400;
             font-size: 18px;
@@ -1786,10 +1783,10 @@ body {
 
             }
         }
-
         .footer_box {
             display: flex;
             align-items: center;
+            gap: 5px;
             justify-content: space-between;
 
             @media(max-width:976px) {

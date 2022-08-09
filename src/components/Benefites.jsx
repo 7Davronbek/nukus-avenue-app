@@ -1,6 +1,9 @@
+
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Benefites = () => {
+    const {t} = useTranslation();
     return (
         <>
             <div className="Benefites">
@@ -13,7 +16,7 @@ const Benefites = () => {
 
                         <div className="col-12 text-center text-lg-start">
                             <div className="ben_h">
-                                Преимущества жилого комплекса
+                                {t('advantages_of_the_residential_complex')}
                             </div>
                         </div>
 
@@ -24,7 +27,7 @@ const Benefites = () => {
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="ben_box">
                                         <div className="ben_p">
-                                            Надземная и подземная парковка
+                                            {t('overground_and_underground_parking')}
                                         </div>
                                         <img className='mt-4' src="/image/ben_1.png" alt="" />
                                     </div>
@@ -32,9 +35,7 @@ const Benefites = () => {
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="ben_box">
                                         <div className="ben_p">
-                                            Обустроенные
-                                            детские
-                                            площадки
+                                            {t('equipped_playgrounds')}
                                         </div>
                                         <img className='mt-4' src="/image/ben_2.png" alt="" />
                                     </div>
@@ -42,8 +43,7 @@ const Benefites = () => {
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="ben_box_2">
                                         <div className="ben_p">
-                                            Современная
-                                            архитектура
+                                            {t('modern_architecture')}
                                         </div>
                                         <img className='mt-4' src="/image/ben_3.png" alt="" />
                                     </div>
@@ -53,9 +53,7 @@ const Benefites = () => {
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="ben_box">
                                         <div className="ben_p">
-                                            Кирпичные
-                                            дома
-
+                                            {t('brick_houses')}
                                         </div>
                                         <img className='mt-4' src="/image/ben_4.png" alt="" />
                                     </div>
@@ -63,8 +61,7 @@ const Benefites = () => {
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="ben_box">
                                         <div className="ben_p">
-                                            Просторный и удобный
-                                            лифт
+                                            {t('spacious_and_comfortable_elevator')}
                                         </div>
                                         <img className='mt-4' src="/image/ben_5.png" alt="" />
                                     </div>
@@ -72,8 +69,7 @@ const Benefites = () => {
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="ben_box_2">
                                         <div className="ben_p">
-                                            Комнат
-                                            1, 2, 3, 4
+                                            {t('rooms')}
                                         </div>
                                         <img className='mt-4' src="/image/ben_6.png" alt="" />
                                     </div>
@@ -82,9 +78,7 @@ const Benefites = () => {
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="ben_box">
                                         <div className="ben_p">
-                                            Этажность 12
-                                            +(-1) цокольный
-
+                                           {t('flats')}
                                         </div>
                                         <img className='mt-4' src="/image/ben_7.png" alt="" />
                                     </div>
@@ -92,8 +86,7 @@ const Benefites = () => {
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="ben_box">
                                         <div className="ben_p">
-                                            Раздельная
-                                            планировка
+                                            {t('separate_layout')}
 
                                         </div>
                                         <img className='mt-4' src="/image/ben_8.png" alt="" />
@@ -102,8 +95,7 @@ const Benefites = () => {
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="ben_box_2">
                                         <div className="ben_p">
-                                            Круглосуточное
-                                            видеонаблюдение
+                                           {t('video_surveillance')}
                                         </div>
                                         <img className='mt-4' src="/image/ben_9.png" alt="" />
                                     </div>
@@ -113,7 +105,7 @@ const Benefites = () => {
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="ben_box_3">
                                         <div className="ben_p">
-                                            Высота потолков <br />
+                                            {t('ceiling_height')} <br />
                                             3,20 м
                                         </div>
                                         <img className='mt-4' src="/image/ben_10.png" alt="" />
@@ -122,8 +114,7 @@ const Benefites = () => {
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="ben_box_3">
                                         <div className="ben_p">
-                                            Шумозащитные
-                                            окна
+                                            {t('soundproof_windows')}
                                         </div>
                                         <img className='mt-4' src="/image/ben_11.png" alt="" />
                                     </div>
@@ -131,8 +122,7 @@ const Benefites = () => {
                                 <div className="col-lg-4 col-sm-6">
                                     <div className="ben_box_4">
                                         <div className="ben_p">
-                                            Возможность создать
-                                            свой интерьер
+                                            {t('possibility_to_create_your_own_interior')}
                                         </div>
                                         <img className='mt-4' src="/image/ben_12.png" alt="" />
                                     </div>

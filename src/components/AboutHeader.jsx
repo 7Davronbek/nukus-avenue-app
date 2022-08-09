@@ -1,14 +1,16 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const AboutHeader = () => {
+    const {t} = useTranslation();
   return (
     <div className='AboutHeader'>
         <div className="container">
             <div className="row align-items-center about_box">
                 <div className="col-lg-6 myCol">
                     <div className="cards">
-                        <h1>Наш взгляд на жизнь</h1>
-                        <p>Строительство — это не просто бизнес! Это то, как мы видим жизнь, наше отношение к жизни. Мы верим в человека и это вдохновляет нас на новые свершения. Архитектурный проект BEST HOUSE — жилой комплекс «Nukus Avenue».</p>
+                        <h1>{t('our_outlook_on_life')}</h1>
+                        <p>{t('our_outlook_on_life_text')}</p>
                     </div>
                     <div className="leftImg">
                         <img src="/image/header_b.png" alt="" />

@@ -1,7 +1,9 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
 const About = () => {
+    const {t} = useTranslation();
     return (
         <>
             <div className="About">
@@ -9,14 +11,14 @@ const About = () => {
                     <div className="row ">
                         <div className="col-12 d-lg-flex justify-content-between">
                             <div className="about_h">
-                                О нас
+                                {t('about_us')}
                             </div>
                             <div>
                                 <div className="about_p">
-                                    Компания «BEST HOUSE» успешно занимается реализацией проектов в сфере недвижимости и строительства. На данный момент, одним из самых значимых проектов нашей компании является жилой комплекс «Nukus Avenue» в  Яккасарайском районе столицы Узбекистана. Этот жилой комплекс позволит обладателям квартир в нем обрести уютную жизнь! Комфорт и удобство обеспечены вам, ведь квартиры в жилом комплексе «Nukus Avenue» уникальны по своей планировке и каждый сможет выбрать то, что по душе.
+                                    {t('about_us_text')}
                                 </div>
                                 <Link to="/about-us" className="about_a">
-                                    <div className="about_l">Подробнее</div>
+                                    <div className="about_l">{t('more')}</div>
                                     <div ><img src="/image/line.png" alt="" /></div>
                                 </Link>
                             </div>

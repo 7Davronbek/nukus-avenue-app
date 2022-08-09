@@ -1,10 +1,11 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
 import { Pagination, Navigation } from "swiper";
+import { useTranslation } from 'react-i18next';
 
 const SecondApartment = ({setModal}) => {
+    const {t} = useTranslation();
     return (
         <div className='FirstApartment SecondApartment' id='second'>
             <div className="container">
@@ -12,11 +13,11 @@ const SecondApartment = ({setModal}) => {
                     <div className="col-lg-10 mx-auto">
                         <div className="row">
                             <div className="col-lg-4 myCol">
-                                <h1>План и планировка</h1>
-                                <h2>Двух <br /> комната</h2>
-                                <h3>Общая площядь:  <strong>60.4 м2</strong></h3>
+                                <h1>{t('first_apartment_1')}</h1>
+                                <h2>{t('second_apartment_1')}<br /> {t('first_apartment_3')}</h2>
+                                <h3>{t('first_apartment_4')}  <strong>60.4 м2</strong></h3>
 
-                                <button onClick={() => setModal(true)} className="btn myBtn">Оставить заявку</button>
+                                <button onClick={() => setModal(true)} className="btn myBtn">{t('first_apartment_5')}</button>
                             </div>
 
                             <div className="col-lg-8">

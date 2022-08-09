@@ -5,18 +5,20 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Navigation } from "swiper";
+import { useTranslation } from 'react-i18next';
 
 const FutureHouse = () => {
+    const {t} = useTranslation()
     return (
         <div className='FutureHouse px-3'>
             <div className="container">
                 <div className="row">
                     <div className="col-12">
                         <div className="fut_h">
-                            Взгляните на свой будущий дом
+                            {t('future_1_house')}
                         </div>
                         <div className="fut_p">
-                            Успейте купить квартиру для своей семьи в одном из лучших жилых комплексов Ташкента!
+                           {t('future_2_house')}
                         </div>
                     </div>
                     <div className="col-12">

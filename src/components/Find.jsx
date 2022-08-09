@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
 
 import { Pagination, Navigation } from "swiper";
+import { useTranslation } from 'react-i18next';
 
 const Find = () => {
+    const {t} = useTranslation();
     return (
         <>
             <div className="Find">
@@ -13,12 +14,12 @@ const Find = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-5 text-lg-start text-center">
                             <div className="find_h">
-                                Подбор квартир
+                                {t('find_1')}
                             </div>
                             <div className="find_p">
-                                Подберите квартиру, которая придется по душе и по потребностям.
+                                {t('find_2')}
                             </div>
-                            <Link className='find_a' to="/selection-of-apartment">Подробнее</Link>
+                            <Link className='find_a' to="/selection-of-apartment">{t('find_3')}</Link>
                         </div>
                         <div className="col-lg-7 mt-5 mt-lg-0">
                             <Swiper

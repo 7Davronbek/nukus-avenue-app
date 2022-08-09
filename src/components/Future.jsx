@@ -1,6 +1,8 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const Future = () => {
+    const {t} = useTranslation();
     return (
         <>
             <div className="Future">
@@ -10,11 +12,11 @@ const Future = () => {
                             <div className="row  fut">
                                 <div className="col-lg-12 ">
                                     <img className='future_img' src="/image/fut_1.png" alt="" />
-                                    <div className="fut_name">Рассрочка</div>
-                                    <div className="fut_text">Успей купить квартиру в жилом комплексе «Nukus Avenue» в рассрочку! *Рассрочка действует в течение 12 месяцев.</div>
+                                    <div className="fut_name">{t('future_1')}</div>
+                                    <div className="fut_text">{t('future_2')}</div>
                                     <a className='fut_box' href="tel: +998 55 500 03 55">
                                         <div className="fut_a">
-                                            Позвонить
+                                        {t('future_3')}
                                             <img className='fut_l' src="/image/line.png" alt="" />
                                         </div>
                                     </a>
@@ -25,12 +27,11 @@ const Future = () => {
                             <div className="row  fut">
                                 <div className="col-lg-12 ">
                                     <img className='future_img' src="/image/fut_2.png" alt="" />
-                                    <div className="fut_name">Остались вопросы?</div>
-                                    <div className="fut_text">Свяжитесь с нашими специалистами.
-                                        Они с удовольствием помогут подобрать наилучший вариант планировки.</div>
+                                    <div className="fut_name">{t('future_4')}</div>
+                                    <div className="fut_text">{t('future_5')}</div>
                                     <a className='fut_box' href="tel: +998 55 500 03 55">
                                         <div className="fut_a">
-                                            Позвонить
+                                        {t('future_3')}
                                             <img className='fut_l' src="/image/line.png" alt="" />
                                         </div>
                                     </a>

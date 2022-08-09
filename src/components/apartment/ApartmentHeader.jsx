@@ -1,12 +1,14 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 const ApartmentHeader = () => {
+  const {t} = useTranslation()
   return (
     <div className='ApartmentHeader'>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <h1>Подбор квартир</h1>
+            <h1>{t('apartment_header_1')}</h1>
           </div>
         </div>
 
@@ -18,9 +20,9 @@ const ApartmentHeader = () => {
                 <a href='#one' className="cards">
                   <div className="img">
                     <img src="/image/apartment1.png" alt="" />
-                    <h3>Подробнее</h3>
+                    <h3>{t('apartment_header_1')}</h3>
                   </div>
-                  <h2>Одна комнатная квартира</h2>
+                  <h2>{t('apartment_header_3')}</h2>
                 </a>
               </div>
 
@@ -28,9 +30,9 @@ const ApartmentHeader = () => {
                 <a href='#second' className="cards">
                   <div className="img">
                     <img src="/image/apartment2.png" alt="" />
-                    <h3>Подробнее</h3>
+                    <h3>{t('apartment_header_1')}</h3>
                   </div>
-                  <h2>Двух комнатные квартиры</h2>
+                  <h2>{t('apartment_header_4')}</h2>
                 </a>
               </div>
 
@@ -38,9 +40,9 @@ const ApartmentHeader = () => {
                 <a href='#third' className="cards">
                   <div className="img">
                     <img src="/image/apartment3.png" alt="" />
-                    <h3>Подробнее</h3>
+                    <h3>{t('apartment_header_1')}</h3>
                   </div>
-                  <h2>Трех комнатная квартира</h2>
+                  <h2>{t('apartment_header_5')}</h2>
                 </a>
               </div>
 
@@ -48,9 +50,9 @@ const ApartmentHeader = () => {
                 <a href='#fourth' className="cards">
                   <div className="img">
                     <img src="/image/apartment4.png" alt="" />
-                    <h3>Подробнее</h3>
+                    <h3>{t('apartment_header_1')}</h3>
                   </div>
-                  <h2>Четырёх комнатная квартира</h2>
+                  <h2>{t('apartment_header_6')}</h2>
                 </a>
               </div>
 
