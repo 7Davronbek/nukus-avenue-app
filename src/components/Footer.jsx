@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { useLocation, Link } from 'react-router-dom'
 
 const Footer = ({ modal, setModal }) => {
-    const {t} = useTranslation()
+    const { t } = useTranslation()
     const location = useLocation()
     return (
         <>
@@ -46,6 +46,10 @@ const Footer = ({ modal, setModal }) => {
                         </div>
                     </div>
                 </div>}
+
+            <div className="koko">
+                <a target={'_blank'} rel="noreferrer" href="https://kokoagency.uz/#/">© 2022 NUKUS AVENUE by <span>kOkO Digital Agency</span></a>
+            </div>
         </>
     )
 }

@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 import { UncontrolledCollapse, Button } from 'reactstrap';
 
 const Plan = () => {
-    const {t} = useTranslation()
+    const { t } = useTranslation()
     return (
         <div className='Plan'>
             <div className="container">
@@ -21,7 +21,7 @@ const Plan = () => {
                                 <span><img src="/icon/arrowBottom.svg" alt="" /></span> {t('plan_2')} {"("}2 - {t('plan_3')}
                             </Button>
                             <UncontrolledCollapse className='myCollapse' toggler="#toggler">
-                                <table className="table">
+                                <table className="table table-responsive-md">
                                     <tbody>
                                         <tr className='myTr'>
 
