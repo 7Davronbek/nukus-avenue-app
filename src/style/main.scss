@@ -112,8 +112,8 @@ body {
 
             img {
                 position: absolute;
-                right: 30px;
-                top: 50px;
+                right: 35px;
+                top: 70px;
                 transform: translateY(-50%);
             }
         }
@@ -176,6 +176,25 @@ body {
 
             @media(max-width: 1200px) {
                 margin-left: 20px;
+            }
+
+            .siteLang {
+                border: 1px solid $blue;
+                color: $blue;
+                box-shadow: none;
+                font-size: 18px;
+                font-weight: 600;
+
+
+                option {
+                    background-color: $blue;
+                    color: #fff;
+                    padding: 10px;
+                }
+            }
+
+            &:last-child {
+                margin-right: 0;
             }
         }
 

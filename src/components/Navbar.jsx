@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom'
 
-
 const Navbar = ({ changeLang }) => {
   const location = useLocation()
   const [navbar, setNavbar] = useState(false)
@@ -32,7 +31,7 @@ const Navbar = ({ changeLang }) => {
               <Link onClick={() => setNavbar(false)} className={`nav_a ${location.pathname === '/complexes' ? 'active' : ''}`} to="/complexes">{t('residential_complexes')}</Link>
 
               <div className="nav_li">
-                <select className='siteLang' onChange={changeLanguage}>
+                <select className='siteLang form-control' onChange={changeLanguage}>
                   <option value="ru">Ру</option>
                   <option value="uz">Uz</option>
                 </select>
