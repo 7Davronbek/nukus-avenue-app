@@ -3,12 +3,12 @@ import { useTranslation } from 'react-i18next';
 import { Link, useLocation } from 'react-router-dom'
 
 
-const Navbar = ({changeLang}) => {
+const Navbar = ({ changeLang }) => {
   const location = useLocation()
   const [navbar, setNavbar] = useState(false)
 
-  const {t} = useTranslation();
-  
+  const { t } = useTranslation();
+
   const changeLanguage = (e) => {
     e.preventDefault();
     changeLang(e.target.value)
@@ -24,7 +24,7 @@ const Navbar = ({changeLang}) => {
             </div>
             <div onClick={() => setNavbar(true)} className="open"><img src="/icon/burger.svg" alt="" /></div>
             <div className={`col-lg-10 d-flex justify-content-end myCol ${navbar ? 'active' : ''}`}>
-              <div onClick={() => setNavbar(false)} className="close"><img src  ="/icon/burgerClose.svg" alt="" /></div>
+              <div onClick={() => setNavbar(false)} className="close"><img src="/icon/burgerClose.svg" alt="" /></div>
               <Link onClick={() => setNavbar(false)} className={`nav_a ${location.pathname === '/' ? 'active' : ''}`} to="/">{t('home')}</Link>
               <Link onClick={() => setNavbar(false)} className={`nav_a ${location.pathname === '/about-us' ? 'active' : ''}`} to="/about-us">{t('about_us')}</Link>
               <Link onClick={() => setNavbar(false)} className={`nav_a ${location.pathname === '/selection-of-apartment' ? 'active' : ''}`} to="/selection-of-apartment">{t('selection_of_apartments')}</Link>
@@ -33,11 +33,11 @@ const Navbar = ({changeLang}) => {
 
               <div className="nav_li">
                 <select className='siteLang' onChange={changeLanguage}>
-                    <option value="ru">Ру</option>
-                    <option value="uz">Uz</option>
+                  <option value="ru">Ру</option>
+                  <option value="uz">Uz</option>
                 </select>
               </div>
-           
+
             </div>
           </div>
         </div>

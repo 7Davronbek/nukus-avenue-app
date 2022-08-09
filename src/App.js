@@ -14,7 +14,6 @@ import { initReactI18next } from "react-i18next";
 import translationsRu from "./locales/Ru";
 import translationsUz from "./locales/Uz";
 
-
 i18n.use(initReactI18next).init({
   resources: {
     ru: { translation: translationsRu },
@@ -27,14 +26,13 @@ i18n.use(initReactI18next).init({
 
 const App = () => {
   const [modal, setModal] = useState(false);
-  const changeLang = (value)=>{
-    console.log(value)
-    i18n.changeLanguage(value) 
-  }
+  const changeLang = (value) => {
+    i18n.changeLanguage(value);
+  };
   return (
-    <Suspense fallback='Loading...'>
+    <Suspense fallback="Loading...">
       <BrowserRouter>
-        <Navbar changeLang={changeLang}/>
+        <Navbar changeLang={changeLang} />
         <Routes>
           <Route path="/about-us" element={<AboutUsPage />} />
           <Route path="/contacts" element={<Contact setModal={setModal} />} />
