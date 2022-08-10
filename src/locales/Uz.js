@@ -6,7 +6,7 @@ const translationsUz = {
   contacts: "Aloqa",
   residential_complexes: "Turar-joy komplekslari",
   // Header component
-  choose_your_dream_apartment: "O'zingizning orzuingizdagi xonadoni tanlang",
+  choose_your_dream_apartment: "O'zingizning orzuingizdagi xonadonni tanlang",
   in_our_complex_everything_is_thought_out_to_the_smallest_detail:
     "Bizning kompleksimizda hamma narsa eng mayda detallargacha o'ylangan.",
   submit_your_application: "Arizangizni yuboring",
@@ -122,6 +122,8 @@ const translationsUz = {
   second_apartment_1: "Ikki",
   // third apartment
   third_apartment_1: "Uch",
+  name_in: 'Ism',
+  phone_in: 'Telefon raqam'
 };
 
 export default translationsUz;

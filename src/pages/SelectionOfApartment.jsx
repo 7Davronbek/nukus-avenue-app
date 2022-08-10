@@ -5,6 +5,8 @@ import FourthApartment from '../components/apartment/FourthApartment'
 import SecondApartment from '../components/apartment/SecondApartment'
 import ThirdApartment from '../components/apartment/ThirdApartment'
 
+import { Fancybox, Carousel, Panzoom } from "@fancyapps/ui";
+
 const SelectionOfApartment = ({ setModal }) => {
     return (
         <>

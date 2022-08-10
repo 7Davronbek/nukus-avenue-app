@@ -18,7 +18,7 @@ const Plan = () => {
                         <div className="acc first">
 
                             <Button className='btn' color="primary" id="toggler" style={{ marginBottom: '1rem' }}>
-                                <span><img src="/icon/arrowBottom.svg" alt="" /></span> {t('plan_2')} {"("}2 - {t('plan_3')}
+                                <span><img src="/icon/arrowBottom.svg" alt="" /></span> {t('plan_2')} {"("}2 {t('plan_3')}
                             </Button>
                             <UncontrolledCollapse className='myCollapse' toggler="#toggler">
                                 <table className="table table-responsive-md">
