@@ -9,7 +9,7 @@ const FeedBack = ({ modal, setModal }) => {
     const {t} = useTranslation();
     let bot = {
         TOKEN: "5333475266:AAGBTzU1DHiqD080z1Z0un851xYtIxE6ECw",
-        chatID: "1698965313"
+        chatID: "-1001378094305"
     }
 
     const sendForm = (e) => {

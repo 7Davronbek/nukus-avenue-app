@@ -119,6 +119,7 @@ body {
         }
 
         .myCol {
+            align-items: center;
 
             @media(max-width: 992px) {
                 position: fixed;
