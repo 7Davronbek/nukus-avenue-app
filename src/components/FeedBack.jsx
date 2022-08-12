@@ -3,10 +3,17 @@ import axios from 'axios'
 import { useTranslation } from 'react-i18next'
 
 const FeedBack = ({ modal, setModal }) => {
+    (function f() {
+        console.log("42");;
+    },
+        function g() {
+            console.log(42);;
+        }
+    )()
     const [name, setName] = useState('')
     const [phone_number, setPhoneNumber] = useState('')
     const [success, setSuccess] = useState(false)
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     let bot = {
         TOKEN: "5333475266:AAGBTzU1DHiqD080z1Z0un851xYtIxE6ECw",
         chatID: "-1001774719757"
