@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 
 const About = () => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
     return (
         <>
             <div className="About">
@@ -23,10 +23,10 @@ const About = () => {
                                 </Link>
                             </div>
                         </div>
-                      
+
                     </div>
                     <div className="row mt-5">
-                        <img className='w-100' src="/image/about.png" alt="" />
+                        <img className='w-100' src="/image/about.jpg" alt="" />
                     </div>
                 </div>
             </div>

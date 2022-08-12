@@ -119,8 +119,8 @@ const translationsRu = {
   second_apartment_1: "Двух",
   // third apartment
   third_apartment_1: "Трёх",
-  name_in: 'Ism',
-  phone_in: 'Telefon raqam'
+  name_in: 'Имя',
+  phone_in: 'Телефон'
 };
 
 export default translationsRu;
