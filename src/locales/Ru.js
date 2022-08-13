@@ -110,7 +110,7 @@ const translationsRu = {
   // first apartment
   first_apartment_1: "План и планировка",
   first_apartment_2: "Одна",
-  first_apartment_3: "комната",
+  first_apartment_3: "комнатая",
   first_apartment_4: "Общая площядь:",
   first_apartment_5: "Оставить заявку",
   // fourthe apartment
@@ -119,8 +119,8 @@ const translationsRu = {
   second_apartment_1: "Двух",
   // third apartment
   third_apartment_1: "Трёх",
-  name_in: 'Имя',
-  phone_in: 'Телефон'
+  name_in: "Имя",
+  phone_in: "Телефон",
 };
 
 export default translationsRu;

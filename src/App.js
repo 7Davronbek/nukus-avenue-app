@@ -13,6 +13,7 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import translationsRu from "./locales/Ru";
 import translationsUz from "./locales/Uz";
+import Phone from "./components/Phone";
 
 i18n.use(initReactI18next).init({
   resources: {
@@ -68,6 +69,7 @@ const App = () => {
         <Footer modal={modal} setModal={setModal} />
         <FeedBack modal={modal} setModal={setModal} />
         <ScrollToTop />
+        <Phone />
       </BrowserRouter>
     </Suspense>
   );
