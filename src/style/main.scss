@@ -2044,6 +2044,43 @@ body {
         }
     }
 
+    .Phone {
+        display: flex;
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        box-shadow: 0 0 10px #141414;
+        z-index: 999;
+        border-radius: 50%;
+        animation: animPhone 2s linear infinite;
+
+        img {
+
+            @media(max-width: 767px) {
+                transform: scale(0.8);
+            }
+        }
+
+        @media(max-width: 767px) {
+            bottom: 30px;
+            right: 30px;
+        }
+    }
+
+    @keyframes animPhone {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.05) rotate(10deg);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
     // **************** FANCY_BOX **********************
 
     .fancybox__thumbs {
